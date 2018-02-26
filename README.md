@@ -18,39 +18,24 @@ Let's get started!
 
 4. Still inside of the `.grid` rule set, set `grid-template-columns` to six equal sections using the `fr` measurement. When you run your code, don’t panic! The CSS is just trying to organize our content based off of our instructions. In a later section, we’ll go over how to style our `<div>`s so they take up the necessary column widths.
 
-5.
-Refactor the previous exercise’s code using the repeat() function. After that, refactor the grid-template-rows and grid-templates-columns code using the grid-template property.
+5. Refactor the previous exercise’s code using the `repeat()` function. After that, refactor the `grid-template-rows` and `grid-templates-columns` code using the `grid-template` property.
 
-6.
-Now, let’s fix that broken page layout. Using grid-column-start and grid-column-end, style the <header> element so that it extends across all of the columns. Now, do the same for .banner, .about, and footer.
+6. Now, let’s fix that broken page layout. Using `grid-column-start` and `grid-column-end`, style the `<header>` element so that it extends across all of the columns. Now, do the same for `.banner`, `.about`, and `footer`.
 
-7.
-Use grid-column to cause .address to span the first two columns, .hours to span the 3rd and 4th, and .call-us to span the 5th and 6th.
+7. Use `grid-column` to cause `.address` to span the first two columns, `.hours` to span the 3rd and 4th, and `.call-us` to span the 5th and 6th.
 
-8.
-In the .one and .two rule sets, use grid-column to have each <div> span three columns in the 5th row.
+8. In the `.one` and `.two` rule sets, use `grid-column` to have each `<div>` span three columns in the 5th row.
 
-9.
-Let’s give our content some wiggle room. Return to the .grid rule set, add a grid-column-gap property, and set its value to 20 pixels. Notice which parts of the page have changed.
+9. Let’s give our content some wiggle room. Return to the `.grid` rule set, add a `grid-column-gap` property, and set its value to 20 pixels. Notice which parts of the page have changed.
 
-10.
-Now let's lay out our mobile version. For this grid, we want all of the content to occupy one column. Within the @media rule, inside the .grid rule set, add the grid-template-columns property and set its value to 100%.
+10. Now let's lay out our mobile version. For this grid, we want all of the content to occupy one column. Within the `@media` rule, inside the `.grid` rule set, add the `grid-template-columns` property and set its value to 100%.
 
-11.
-We also need to specify additional rows. Add grid-template-rows and have its value be the same as the desktop version. Remember that each value is equal to a row.
+11. We also need to specify additional rows. Add `grid-template-rows` and have its value be the same as the desktop version. Remember that each value is equal to a row. To include more rows, split the fourth value into three equal values. Use the same process to turn the fifth row into two new rows. Try to practice your refactoring on this one!
 
-To include more rows, split the fourth value into three equal values. Use the same process to turn the fifth row into two new rows. Try to practice your refactoring on this one!
+12. Use `grid-row` to define the starting row of the information blocks (`.address`, `.hours`, and `.call-us`) and testimonial blocks (`.one` and `.two`), and how many rows they will span.
 
-12.
-Use grid-row to define the starting row of the information blocks (.address, .hours, and .call-us) and testimonial blocks (.one and .two), and how many rows they will span.
+13. We also have to specify that these blocks now only take up one column of space. Add `grid-column: 1 / span 1;` to their rule sets.
 
-13.
-We also have to specify that these blocks now only take up one column of space. Add grid-column: 1 / span 1; to their rule sets.
+14. Rather than have gaps between columns, we now want to have gaps between the rows. Return to the `.grid` rule set and add a property so that there is a 20 pixel gap between the rows.
 
-14.
-Rather than have gaps between columns, we now want to have gaps between the rows.
-
-Return to the .grid rule set and add a property so that there is a 20 pixel gap between the rows.
-
-15.
-But what if we don’t want there to be a gap between all of our rows? We can avoid the grid-row-gap rule by using negative margins. In header, .banner, and .about, set margin-bottom to -20px. For the footer, set margin-top to -20px.
+15. But what if we don’t want there to be a gap between all of our rows? We can avoid the `grid-row-gap` rule by using negative margins. In `header`, `.banner`, and `.about`, set `margin-bottom` to `-20px`. For the `footer`, set `margin-top` to `-20px`.
